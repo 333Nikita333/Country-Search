@@ -95,12 +95,11 @@ function createCountryLabel({ name, capital, population, flags, languages }) {
 }
 
 function setStylesSearchForm() {
-  const bodyEl = document.querySelector('body');
-  bodyEl.style.backgroundColor = 'skyblue';
-  bodyEl.style.display = 'flex';
-  bodyEl.style.justifyContent = 'center';
-  bodyEl.style.alignItems = 'center';
-  bodyEl.style.flexDirection = 'column';
+  refs.body.style.backgroundColor = 'skyblue';
+  refs.body.style.display = 'flex';
+  refs.body.style.justifyContent = 'center';
+  refs.body.style.alignItems = 'center';
+  refs.body.style.flexDirection = 'column';
 
   refs.searchForm.style.fontSize = '25px';
   refs.searchForm.style.display = 'flex';
