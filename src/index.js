@@ -13,14 +13,13 @@ refs.searchForm.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
 function onSearch(e) {
   e.preventDefault();
-
   const searchQuerry = e.target.value.trim();
 
   if (searchQuerry === '') {
     markupCleanup();
     return;
   }
-
+  
   API.fetchCountry(searchQuerry).then(renderCountryCards).catch(errorHandling);
 }
 

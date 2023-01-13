@@ -1,14 +1,14 @@
 const BASE_URL = 'https://restcountries.com/v3.1';
 
-function fetchCountry(countryName) {
-  return fetch(
+async function fetchCountry(countryName) {
+  const response = await fetch(
     `${BASE_URL}/name/${countryName}?fields=name,capital,population,flags,languages`
-  ).then(response => {
-    if (!response.ok) {
-      throw new Error(response.status);
-    }
-    return response.json();
-  });
+  );
+  if (!response.ok) {
+    throw new Error(response.status);
+  }
+  const country = await response.json();
+  return country;
 }
 
 export default { fetchCountry };
