@@ -6,7 +6,6 @@ import getRefs from './js/get-refs';
 
 const DEBOUNCE_DELAY = 300;
 const refs = getRefs();
-
 refs.searchForm.value = '';
 setStylesSearchForm();
 refs.searchForm.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
