@@ -1,15 +1,15 @@
 {
-  "name": "goit-js-hw-10",
+  "name": "country-search",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://333Nikita333.github.io/goit-js-hw-10",
+  "homepage": "https://333Nikita333.github.io/Country-Search",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
+    "build": "parcel build src/*.html --public-url /Country-Search/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/333Nikita333/goit-js-hw-10.git"
+    "url": "git+https://github.com/333Nikita333/Country-Search.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
